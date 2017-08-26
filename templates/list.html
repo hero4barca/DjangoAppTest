@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<h1> list page</h1>
+
+    <div >
+
+    <ul>
+        {% for rec in recList %}
+        <li>
+        {{ rec.getName }}, {{ rec.getEmail }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    </div>
+
+    <p> <a href="/index/"> back to homepage</a></p>
+{% endblock %}
