@@ -18,7 +18,7 @@ def index(request):
 
 
 
-def add(request):
+def create(request):
 
     if request.method == 'POST':
         form = RecordsForm(request.POST)
