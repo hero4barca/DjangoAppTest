@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index),
     url(r'^index/$', index),
-    url(r'^create/$', create),
+    url(r'^add/$', create),
     url(r'^list/$', listRecords),
     url(r'^create/success/$', create_success),
 
